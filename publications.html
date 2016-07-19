@@ -29,17 +29,48 @@ and open the template in the editor.
             
             <article>
                 <h5>
-                    This is the first paper about MVLR
+                    Robust Multitask Multiview Tracking in Videos
                 </h5>
                 <p>
-                    By Dacheng Tao,Chang Ru
+                    By Xue Mei, Zhibin Hong, Danil V. Prokhorov, Dacheng Tao
                 </p>
-                <a href="/" target="_blank">
+                <a href="pdf/robustmultitask.pdf" target="_blank">
                     Link to full article 
                 </a>
                 <div data-role="collapsible">
                     <h4>Abstract</h4>
-                    <p>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</p>
+                    <p>
+                        
+                        Various  sparse-representation-based  methods  have
+been   proposed   to   solve   tracking   problems,   and   most   of
+them  employ  least  squares  (LSs)  criteria  to  learn  the  sparse
+representation. In many tracking scenarios, traditional LS-based
+methods  may  not  perform  well  owing  to  the  presence  of  heavy-
+tailed noise. In this paper, we present a tracking approach using
+an  approximate  least  absolute  deviation  (LAD)-based  multitask
+multiview  sparse  learning  method  to  enjoy  robustness  of  LAD
+and take  advantage  of  multiple types  of  visual  features,  such as
+intensity, color,  and  texture.  The  proposed  method  is  integrated
+in  a  particle  filter framework,  where  learning  the sparse  repre-
+sentation  for  each  view  of  the  single  particle  is  regarded  as  an
+individual task. The underlying relationship between tasks across
+different  views  and  different  particles  is  jointly  exploited  in  a
+unified robust multitask formulation based on LAD. In addition,
+to  capture the  frequently emerging  outlier tasks,  we  decompose
+the  representation  matrix  to  two  collaborative  components  that
+enable  a  more  robust  and  accurate  approximation.  We  show
+that  the  proposed  formulation  can  be  effectively  approximated
+by Nesterov’s smoothing method and efficiently solved using the
+accelerated  proximal  gradient  method.  The  presented  tracker
+is  implemented  using  four  types  of  features  and  is  tested  on
+numerous  synthetic  sequences  and  real-world  video  sequences,
+including  the  CVPR2013  tracking  benchmark  and  ALOV
+++
+data set. Both the qualitative and quantitative results demonstrate
+the  superior  performance  of  the  proposed  approach  compared
+with several  state-of-the-art  trackers.
+                        
+                    </p>
                 </div>
                     
                 
