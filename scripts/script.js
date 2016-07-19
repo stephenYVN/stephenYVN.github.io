@@ -1,3 +1,8 @@
+$(function() {
+    $("[data-role='header'] [data-role='navbar']").navbar();
+    $("[data-role='header'], [data-role='footer']").toolbar();
+});
+
 // Update the contents of the toolbars
 $(document).on("pageshow", "[data-role='page']", function() {
     // Each of the four pages in this demo has a data-title attribute
